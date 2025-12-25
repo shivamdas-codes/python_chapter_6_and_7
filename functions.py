@@ -50,4 +50,4 @@ def new_var(a,b):
 new_var() 
 # in this case it will always throw error because we didn't give any kind of arguments here
 
-
+# example2:
