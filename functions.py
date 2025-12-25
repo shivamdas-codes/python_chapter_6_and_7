@@ -28,3 +28,26 @@ output = null_value() #the value which doesn't return anything it is consider as
 print(output)
 null_value()    #function call nothing here....
 # this function doesnt return anything so python takes it as "NONE"
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+
+# average of three numbers:
+def numbers(a,b,c):
+    average = a + b + c / 3
+    print(average)
+
+    return average
+numbers(5,6,7)
+
+
+
+# default parameters:
+# example1:
+def new_var(a,b):
+    print(a*b)
+    return(a*b)
+new_var() 
+# in this case it will always throw error because we didn't give any kind of arguments here
+
+
