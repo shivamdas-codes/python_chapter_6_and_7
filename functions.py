@@ -24,5 +24,7 @@
 def null_value():   #no parametres assigned
     print("hello")
 
+output = null_value() #the value which doesn't return anything it is consider as 'none'
+print(output)
 null_value()    #function call nothing here....
 # this function doesnt return anything so python takes it as "NONE"
