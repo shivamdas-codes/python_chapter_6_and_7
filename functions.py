@@ -51,3 +51,24 @@ new_var()
 # in this case it will always throw error because we didn't give any kind of arguments here
 
 # example2:
+def new_var(a=2,b=4):
+    print(a*b)
+    return(a*b)
+new_var()
+# in this case if we dont assign any arguments then it will take the parameters as the default value 
+
+# example3:
+def new_var(a ,b=4):
+    print(a*b)
+    return(a*b)
+new_var(6)
+# in this case it will take both arguments and the default value which is already assign in the "b" parameter
+# if we dont assign any value in the arguments still it will take the default value which is already assigned.
+
+
+# example4:
+# def new_var(a=2,b):
+#     print(a*b)
+#     return a*b
+# new_var(5)
+# this case is different from the above case and it will throw error because...........non-default should come first and default should come next.
