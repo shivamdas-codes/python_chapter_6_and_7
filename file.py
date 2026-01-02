@@ -19,6 +19,7 @@ print(data2)
 
 data3 = file.readline()
 print(data3)
+file.close()
 # in the 3rd case the next line will show as empty beacause all the data is already read so there is no data left to read so it will show as empty line in the end.
 
 
