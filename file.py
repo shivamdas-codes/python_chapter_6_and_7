@@ -9,3 +9,17 @@ print(type(data))
 print(len(data))
 f.close()
 
+
+
+file = open("file.txt","r")
+data1 = file.readline()
+print(data1)
+data2 = file.readline()
+print(data2)
+
+data3 = file.readline()
+print(data3)
+# in the 3rd case the next line will show as empty beacause all the data is already read so there is no data left to read so it will show as empty line in the end.
+
+
+
