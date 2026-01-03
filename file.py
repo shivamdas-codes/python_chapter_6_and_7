@@ -56,3 +56,13 @@ f1.read()  #this will not read anything as the file is opened in write mode and 
 f1.write("hey")  #this will append "hey" to the file.
 f1.close()
 
+
+# with statement: both for reading and writing
+with open("sample.txt","r") as f:
+    data = f.read()
+    print(data)
+
+with open("sample.txt","w") as f:
+    f.write("writing using with statement")
+
+
