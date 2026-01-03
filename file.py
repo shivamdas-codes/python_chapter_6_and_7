@@ -36,10 +36,23 @@
 # file.close()
 
 
-# read and write both:
-f = open("sample.txt", "r+")
-# f.write("hey there how are you")  #this will write at the begining of the file.
-f.write("hello")    #this will override the first 5 letters of the file.
-data = f.read()   #this will read the file from where the write operation ended.
-print(data)
+# # read and write both:    r+
+# f = open("sample.txt", "r+")
+# # f.write("hey there how are you")  #this will write at the begining of the file.
+# f.write("hello")    #this will override the first 5 letters of the file.
+# data = f.read()   #this will read the file from where the write operation ended.
+# print(data)
+# f.close()
+
+# read and write both: w+
+f = open("sample.txt", "w+")
+f.read()  #this will not read anything as the file is opened in write mode and the file is empty.
+f.write("hello world")  #this will write "hello world" to the file.
 f.close()
+
+# read and write both: a+
+f1 = open("sample.txt", "a+")
+f1.read()  #this will not read anything as the file is opened in write mode and the file is empty.
+f1.write("hey")  #this will append "hey" to the file.
+f1.close()
+
