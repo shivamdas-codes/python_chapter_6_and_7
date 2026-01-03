@@ -24,15 +24,22 @@
 # # in the 3rd case the next line will show as empty beacause all the data is already read so there is no data left to read so it will show as empty line in the end.
 
 
-# writing to a file:
-file = open("file1.txt","w")
-file.write("hello im intrested in open source......") #this will override the previous data in the file.
-file.write("contributing to real world projects") #this will be added to the previous line without any space or new line.
-file.write("\nhey there how are you") #this will be added to the previous line with a new line.
-file.close()
+# # writing to a file:
+# file = open("file1.txt","w")
+# file.write("hello im intrested in open source......") #this will override the previous data in the file.
+# file.write("contributing to real world projects") #this will be added to the previous line without any space or new line.
+# file.write("\nhey there how are you") #this will be added to the previous line with a new line.
+# file.close()
 
-# appending to a file:
-file = open("sample.txt","a")   #if there is no file with the name sample.txt it will create a new file with that name.
-file.close()
+# # appending to a file:
+# file = open("sample.txt","a")   #if there is no file with the name sample.txt it will create a new file with that name.
+# file.close()
 
 
+# read and write both:
+f = open("sample.txt", "r+")
+# f.write("hey there how are you")  #this will write at the begining of the file.
+f.write("hello")    #this will override the first 5 letters of the file.
+data = f.read()   #this will read the file from where the write operation ended.
+print(data)
+f.close()
